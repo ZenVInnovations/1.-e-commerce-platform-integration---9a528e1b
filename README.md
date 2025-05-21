@@ -1,118 +1,56 @@
-# MERN Ecommerce
+Sure, I can help you format this information into a proper README.md file. Here's how you can structure it:
 
-## Description
+markdown
+# MERN Ecommerce Platform
 
-An ecommerce store built with MERN stack, and utilizes third party API's. This ecommerce store enable three main different flows or implementations:
+A simple ecommerce platform built using the **MERN stack** (MongoDB, Express.js, React, Node.js). This project supports multiple user roles and simulates a real-world ecommerce system with core functionality. It was developed as part of a learning internship to gain hands-on experience with full-stack web development.
 
-1. Buyers browse the store categories, products and brands
-2. Sellers or Merchants manage their own brand component
-3. Admins manage and control the entire store components 
+## Features
 
-### Features:
+- **User Roles**:
+  - **Buyers**: Browse products, categories, and brands.
+  - **Sellers**: Manage their own brand and product listings.
+  - **Admins**: Control all store components.
+- **Tech Stack**:
+  - **Node.js**: Backend runtime environment.
+  - **Express.js**: API and middleware handling.
+  - **MongoDB & Mongoose**: NoSQL database and data modeling.
+  - **React.js**: Frontend user interface.
+  - **Redux & Redux Thunk**: State management and asynchronous actions.
 
-  * Node provides the backend environment for this application
-  * Express middleware is used to handle requests, routes
-  * Mongoose schemas to model the application data
-  * React for displaying UI components
-  * Redux to manage application's state
-  * Redux Thunk middleware to handle asynchronous redux actions
+## Installation
 
-## Demo
+1. **Clone the repository**:
+   bash
+   git clone `https://github.com/ZenVInnovations/1.-e-commerce-platform-integration---9a528e1b`
+   cd Rooman-Internship---Ecommerce-Platform-Integration
+   
 
-This application is deployed on Vercel Please check it out :smile: [here](https://mern-store-gold.vercel.app).
+2. **Install dependencies**:
+   In the root directory, run the following command to install dependencies for both the client and server:
+   bash
+   npm install
+   
 
-See admin dashboard [demo](https://mernstore-bucket.s3.us-east-2.amazonaws.com/admin.mp4)
+3. **Set up environment variables**:
+   - Create a `.env` file in both the `client/` and `server/` directories.
+   - Refer to the `.env.example` files in each directory for the required variables.
 
-## Docker Guide
+4. **Start development**:
+   To start both the client and server in development mode, run:
+   bash
+   npm run dev
+   
 
-To run this project locally you can use docker compose provided in the repository. Here is a guide on how to run this project locally using docker compose.
+## Tech Stack
 
-Clone the repository
-```
-git clone https://github.com/ZenVInnovations/1.-e-commerce-platform-integration---9a528e1b
-```
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- React.js
+- Redux & Redux Thunk
 
-Edit the dockercompose.yml file and update the the values for MONGO_URI and JWT_SECRET
+## Project Purpose
 
-Then simply start the docker compose:
-
-```
-docker-compose build
-docker-compose up
-```
-
-## Database Seed
-
-* The seed command will create an admin user in the database
-* The email and password are passed with the command as arguments
-* Like below command, replace brackets with email and password. 
-* For more information, see code [here](server/utils/seed.js)
-
-```
-npm run seed:db [email-***@****.com] [password-******] // This is just an example.
-```
-
-## Install
-
-`npm install` in the project root will install dependencies in both `client` and `server`. [See package.json](package.json)
-
-Some basic Git commands are:
-
-```
-git clone https://github.com/ZenVInnovations/1.-e-commerce-platform-integration---9a528e1b
-cd project
-npm install
-```
-
-## ENV
-
-Create `.env` file for both client and server. See examples:
-
-[Frontend ENV](client/.env.example)
-
-[Backend ENV](server/.env.example)
-
-
-## Vercel Deployment
-
-Both frontend and backend are deployed on Vercel from the same repository. When deploying on Vercel, make sure to specifiy the root directory as `client` and `server` when importing the repository. See [client vercel.json](client/vercel.json) and [server vercel.json](server/vercel.json).
-
-## Start development
-
-```
-npm run dev
-```
-
-## Languages & tools
-
-- [Node](https://nodejs.org/en/)
-
-- [Express](https://expressjs.com/)
-
-- [Mongoose](https://mongoosejs.com/)
-
-- [React](https://reactjs.org/)
-
-- [Webpack](https://webpack.js.org/)
-
-
-### Code Formatter
-
-- Add a `.vscode` directory
-- Create a file `settings.json` inside `.vscode`
-- Install Prettier - Code formatter in VSCode
-- Add the following snippet:  
-
-```json
-
-    {
-      "editor.formatOnSave": true,
-      "prettier.singleQuote": true,
-      "prettier.arrowParens": "avoid",
-      "prettier.jsxSingleQuote": true,
-      "prettier.trailingComma": "none",
-      "javascript.preferences.quoteStyle": "single",
-    }
-
-```
-
+This project was developed during a learning internship to build practical skills in full-stack web development using the MERN stack. It demonstrates core ecommerce functionality and multi-user role management.
