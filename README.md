@@ -1,6 +1,3 @@
-Sure, I can help you format this information into a proper README.md file. Here's how you can structure it:
-
-markdown
 # MERN Ecommerce Platform
 
 A simple ecommerce platform built using the **MERN stack** (MongoDB, Express.js, React, Node.js). This project supports multiple user roles and simulates a real-world ecommerce system with core functionality. It was developed as part of a learning internship to gain hands-on experience with full-stack web development.
